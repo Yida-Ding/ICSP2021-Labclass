@@ -1,0 +1,11 @@
+a=float(input())
+b=float(input())
+c=float(input())
+d=float(input())
+if(a<b):
+    a=b
+if(a<c):
+    a=c
+if(a<d):
+    a=d
+print(a)

@@ -1,0 +1,16 @@
+a1=int(input())
+a2=int(input())
+a3=int(input())
+if(a1<a2):
+    a=a1
+    a1=a2
+    a2=a
+if(a1<a3):
+    a=a1
+    a1=a3
+    a3=a
+if(a2<a3):
+    a=a2
+    a2=a3
+    a3=a
+print(a1,a2,a3)

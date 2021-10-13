@@ -1,0 +1,18 @@
+x1=int(input())
+y1=int(input())
+x2=int(input())
+y2=int(input())
+x3=int(input())
+y3=int(input())
+a=((x1-x2)**2+(y1-y2)**2)**(1/2)
+b=((x3-x2)**2+(y3-y2)**2)**(1/2)
+c=((x3-x1)**2+(y3-y1)**2)**(1/2)
+if(a<b):
+    d=a
+    a=b
+    b=d
+if(a<c):
+    d=a
+    a=c
+    c=d
+print("arccos",(b**2+c**2-a**2)/(2*b*c))

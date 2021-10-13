@@ -1,0 +1,14 @@
+x=int(input())
+y=int(input())
+l=[1]*y
+p=0
+while(p>-1):
+    if(l[p]>x):
+        p-=1
+    else:
+        if(p==y-1):
+            print(l)
+        else:
+            l[p+1]=l[p]
+            p=p+1
+    l[p]+=1
